@@ -19,10 +19,10 @@ programa
 
 		calorias = cCarbo + cProt + cGord
 
-		escreva ("\nTotal de carbo a ser consumida por dia é: ",carboidrato, " gramas e calorias são: ", cCarbo, " kcall")
-		escreva ("\nTotal de proteina a ser consumida por dia é: ",proteina, " gramas e calorias são: ", cProt, " kcall")
-		escreva ("\nTotal de gordura a ser consumida por dia é: ",gordura, " gramas e calorias são: ", cGord, " kcall")
-		escreva ("\nTotal de calorias diarias são: ",calorias, " kcall")
+		escreva ("\nTotal de carboidratos a ser consumida por dia é: ",carboidrato, " gramas e totalizando: ", cCarbo, " kcall")
+		escreva ("\nTotal de proteina a ser consumida por dia é: ",proteina, " gramas e totalizando: ", cProt, " kcall")
+		escreva ("\nTotal de gordura a ser consumida por dia é: ",gordura, " gramas e totalizando: ", cGord, " kcall")
+		escreva ("\nTotal de calorias diarias a serem consumidas: ",calorias, " kcall")
 
 		
 	}
@@ -32,7 +32,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 407; 
+ * @POSICAO-CURSOR = 743; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
