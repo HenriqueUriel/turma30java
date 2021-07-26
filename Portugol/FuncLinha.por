@@ -5,9 +5,10 @@ programa
 	{
 		cadeia nome
 		caracter opcao
-
+		linha()
 		escreva("Digite seu nome: ")
 		leia(nome)
+		linha()
 		escreva("Digite a opção A/O/E: ")
 		leia(opcao)
 
@@ -24,15 +25,18 @@ programa
 			escreva ("Escolha uma opção valida!!")
 		}
 	}
+
+
+	funcao linha(){
+		escreva("---------------------------------------------------------------------\n")
+	}
 }
-
-
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 472; 
+ * @POSICAO-CURSOR = 132; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
