@@ -53,7 +53,7 @@ programa
 					para(contador = 0 ; contador < 10 ; contador++){
 						se(verificarRepeticao[contador] == auxCod){
 							escreva("\nVocê já selecionou esse produto, quer escolher outro [S/N] ?  \n")
-							escreva("Caso não queira escolher outro produto e modificar o produto já selecionado, \npara retirar do carrinho digite - antes da quantidade desejada.")
+							escreva("Caso não queira escolher outro produto e modificar o produto já selecionado, para retirar do carrinho \ndigite - antes da quantidade desejada, caso seja apenas para adicionar digite somente a quantidade desejada.")
 							leia (continua)
 							limpa()
 							se (continua == 'S' ou continua == 's'){
@@ -194,9 +194,10 @@ programa
 				}
 							
 			}
-			escreva("Deseja retornar para o site [S] / [N]: ")
+			escreva("Deseja continuar com a compra [S/N]: ")
 			leia(desejaVoltarParaSite)
 			limpa()	
+			insereBanner()
 			
 			
 	}enquanto(desejaVoltarParaSite == 's' ou desejaVoltarParaSite == 'S')
@@ -249,7 +250,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 9685; 
+ * @POSICAO-CURSOR = 9771; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
