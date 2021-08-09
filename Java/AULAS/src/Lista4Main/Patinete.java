@@ -6,7 +6,7 @@ public class Patinete {
 
 	public static void main(String[] args) {
 		
-		PatineteClass andandoPatinete = new PatineteClass();
+		PatineteClass andandoPatinete = new PatineteClass("Azul","rosa",2,20,"nao","nao");
 		
 		andandoPatinete.setMarca("Yellow");
 		andandoPatinete.setCor("amarelo");

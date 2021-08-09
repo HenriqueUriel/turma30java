@@ -6,7 +6,7 @@ public class Aviao {
 
 	public static void main(String[] args) {
 		
-		AviaoClass novoAviao = new AviaoClass ();
+		AviaoClass novoAviao = new AviaoClass ("Rosa","vbt67");
 		novoAviao.cor = "Azul";
 		novoAviao.modelo = "71BlackMonster";
 		novoAviao.velocidadeAtual = 0;

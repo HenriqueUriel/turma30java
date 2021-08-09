@@ -11,6 +11,15 @@ public class PatineteClass {
 	
 	
 
+	public PatineteClass(String marca, String cor, int quatidadeRodas, double velocidade, String andando, String caiu) {
+		super();
+		this.marca = marca;
+		this.cor = cor;
+		this.quatidadeRodas = quatidadeRodas;
+		this.velocidade = velocidade;
+		this.andando = andando;
+		this.caiu = caiu;
+	}
 	public void velPatinete (double quantidade) {
 		double velocidadeNova = this.velocidade+quantidade;
 		this.velocidade = velocidadeNova;

@@ -9,6 +9,14 @@ public class FuncionarioClass {
 	public int idade;
 	public String empresa;
 	
+	public FuncionarioClass(double salario, String nome, String genero, int idade, String empresa) {
+		super();
+		this.salario = salario;
+		this.nome = nome;
+		this.genero = genero;
+		this.idade = idade;
+		this.empresa = empresa;
+	}
 	public double getSalario() {
 		return salario;
 	}

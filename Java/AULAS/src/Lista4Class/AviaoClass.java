@@ -8,6 +8,12 @@ public class AviaoClass {
 	public double velocidadeMaxima;
 	
 	
+	
+	public AviaoClass(String cor, String modelo) {
+		super();
+		this.cor = cor;
+		this.modelo = modelo;
+	}
 	public void ligado () {
 		System.out.println("Avião ligado...");
 	}

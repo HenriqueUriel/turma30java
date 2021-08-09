@@ -6,7 +6,7 @@ public class Funcionario {
 
 	public static void main(String[] args) {
 		
-		FuncionarioClass colaborador = new FuncionarioClass();
+		FuncionarioClass colaborador = new FuncionarioClass(1000, "Roberto","N/A",28, "Itau");
 		
 		//declarei (instanciar)
 		colaborador.setNome("Marcos");    
