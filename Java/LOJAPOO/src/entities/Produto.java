@@ -1,4 +1,4 @@
-package ClassDevSaudavel;
+package entities;
 
 public class Produto {
 	//========================ATRIBUTOS=========================

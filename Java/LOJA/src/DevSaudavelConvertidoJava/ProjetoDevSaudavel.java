@@ -1,4 +1,4 @@
-package DevSaudavelConversao;
+package DevSaudavelConvertidoJava;
 import java.time.LocalDateTime;
 	import java.time.format.DateTimeFormatter;
 	import java.util.Scanner;
@@ -237,7 +237,7 @@ import java.time.LocalDateTime;
 		//CabeÃ§alho do site
 		public static void insereBanner() {
 			System.out.println("www.devsaudavel.com.br || versÃ£o 2.0\n");
-			System.out.println("\t\t\t\t*****DEV SAUDÃVEL*****");
+			System.out.println("\t\t\t\t*****DEV SAUDÃ?VEL*****");
 			System.out.println("\t\t\t\tProgramando a sua saÃºde");
 		}
 
@@ -245,13 +245,13 @@ import java.time.LocalDateTime;
 		public static void tituloTabela() {
 			System.out.println("\n\tâ™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥â™¥");
 			System.out.println("\tâ™¥\t\t\t    TABELA DE PRODUTOS\t\t\t\t   â™¥");
-			System.out.println("\tâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• ");
+			System.out.println("\tâ•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•? ");
 			System.out.println("\tâ™¥    CÃ“DIGO\tâ™¥\t PRODUTO\tâ™¥    VALOR (R$)    â™¥    ESTOQUE    â™¥");
 		}
 
 		//CabeÃ§alho do carrinho
 		public static void tituloCarrinho() {
-			System.out.println("\nâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•");
+			System.out.println("\nâ•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?");
 			System.out.println("â™¥\t\t\t\t  CARRINHO DE COMPRAS\t\t\t\t\t    â™¥");
 			System.out.println("\nâ™¥    CÃ“DIGO\tâ™¥\t PRODUTO\tâ™¥    VALOR (R$)    â™¥    QTDD    â™¥     TOTAL (R$)    â™¥");
 		}
@@ -259,10 +259,10 @@ import java.time.LocalDateTime;
 		//Linha divisÃ£o 
 		public static void linha(boolean forte){
 			if(forte){
-				System.out.println("\n\tâ•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•");
+				System.out.println("\n\tâ•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?");
 			}
 			else {
-				System.out.println("â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•");
+				System.out.println("â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?â•?");
 			}
 		}
 		
@@ -271,7 +271,7 @@ import java.time.LocalDateTime;
 			if (forte){
 				System.out.println("======================================= NOTA FISCAL =========================================\n");
 				System.out.println("\nwww.devsaudavel.com.br || versÃ£o 2.0\n");
-				System.out.println("\t\t\t\t  *****DEV SAUDÃVEL*****\n");
+				System.out.println("\t\t\t\t  *****DEV SAUDÃ?VEL*****\n");
 				System.out.println("\t\t\t\t  Programando a sua saÃºde\n");
 				System.out.println("\n\nâ™¥    CÃ“DIGO\tâ™¥\t PRODUTO\tâ™¥    VALOR (R$)    â™¥    QTDD    â™¥     TOTAL (R$)    â™¥\n");
 			}
