@@ -9,6 +9,7 @@ public class Funcoes {
 		Scanner ler = new Scanner(System.in);
 		char entraSite;
 		
+		
 		System.out.print("www.devsaudavel.com.br\n");
 		System.out.print("***** DEV SAUDÁVEL: PROGRAMANDO SUA SAÚDE *****\n");
 		System.out.print("Deseja entrar no site [S] / [N]: ");
@@ -30,15 +31,68 @@ public class Funcoes {
 		System.out.print("---------------------------------------------------------\n");
 		System.out.print("                  RELAÇÕES DE PRODUTOS                  \n");
 		System.out.print("---------------------------------------------------------\n");
-		System.out.print("COD      PRODUTO               VALOR R$       ESTOQUE\n");
+		System.out.print("COD     VALOR R$      ESTOQUE            PRODUTO\n");
 		System.out.print("---------------------------------------------------------\n");
 	}
 
 	public static void apresentaTabela(List<Produto> lista) {
+		String auxCod;
+		int auxQuant = 0;
+		int pos=-1;
+		char op;
+		Scanner ler = new Scanner(System.in);
 		if(entraNosite()) {
+			do {
+				pos = -1;
+				for (Produto item : lista) {
+					System.out.println(item.getCodProduto()+"\t"+item.getPreco()+"\t\t"+item.getEstoque()+"\t\t"+item.getProduto()+((item.getEstoque()>0)?" ":"\tPRODUTO INDISPONIVEL"));
+				}
+				System.out.print("Digite o codigo do produto: ");
+				auxCod = ler.next().toUpperCase();
+				//pos = lista.indexOf(auxCod);
+				
+				for (int x=0; x<lista.size(); x++ ) {
+					
+					if (lista.get(x).getCodProduto().equals(auxCod)) {
+						pos = x;
+						break;
+					}
+					
+				}
+			
+				if (pos>=0) {
+					System.out.println("Produto escolhido: ");
+					System.out.println("COD\tVALOR\tESTOQUE\tPRODUTO");
+					System.out.printf("%s\t%.2f\t%d\t%s\n",lista.get(pos).getCodProduto(),lista.get(pos).getPreco(),lista.get(pos).getEstoque(),lista.get(pos).getProduto());
+					System.out.println("Quantidade do Produto: ");
+					int auxQtde = ler.nextInt();
+					if (auxQtde< 0) {
+						System.out.println("Impossivel realizar, valor negativo!!!");
+					}
+					else if (auxQtde==0) {
+						System.out.println("Impossivel realizar, quantidade zero.");
+					}
+					else if (lista.get(pos).getEstoque()==0){
+						System.out.println("Impossivel realizar, produto sem estoque!!!");
+					}
+					else if (lista.get(pos).getEstoque()< auxQtde) {
+						System.out.print("Impossivel realizar, quantidade maior que estoque!!");
+					} else {
+						System.out.println("Valor: R$"+(auxQtde*lista.get(pos).getPreco()));
+						lista.get(pos).retiraEstoque(auxQtde);
+					}
+				}
+				else {
+					System.out.println("Codigo informado não existe!!!");
+				}
+				System.out.println("Continua SIM/NAO [S/N] :");
+				op = ler.next().toUpperCase().charAt(0);
+				insereBanner ();
+			} while (op=='S');
 			for (Produto item : lista) {
-				System.out.print(item.getCodProduto()+"\t"+item.getProduto()+"\t\t"+item.getPreco()+"\t\t"+item.getEstoque()+"\n");
+				System.out.println(item.getCodProduto()+"\t"+item.getPreco()+"\t\t"+item.getEstoque()+"\t\t"+item.getProduto());
 			}
+			System.out.println("VOLTE SEMPRE!!!");
 		}
 	}
 
