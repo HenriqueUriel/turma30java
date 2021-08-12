@@ -9,8 +9,6 @@ public class teste extends Funcoes {
 	public static void main(String[] args) {
 		Scanner ler = new Scanner(System.in);
 		
-		entraNosite();
-		
 		List<Produto> lista = new ArrayList<>();	
 		
 		lista.add(new Produto("G3-01","Glutamina",30.00,10));
@@ -23,9 +21,11 @@ public class teste extends Funcoes {
 		lista.add(new Produto("G3-08","Camiseta",25.00,10));
 		lista.add(new Produto("G3-09","BCAA CAPS",50.00,10));
 		lista.add(new Produto("G3-10","Corda P.",22.00,10));
-		for (Produto item : lista) {
-				System.out.print(item.getCodProduto()+"\t"+item.getProduto()+"\t\t"+item.getPreco()+"\t\t"+item.getEstoque()+"\n");
-			}	
-	}
-
+		
+		apresentaTabela(lista);	
+			
+	}	
+		
 }
+
+

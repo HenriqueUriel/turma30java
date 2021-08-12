@@ -34,7 +34,7 @@ public class PetC {
 	public void setPorte(char porte) {
 		this.porte = porte;
 	}
-//metodo
+	//metodo
 	public int idade () {
 		return  (2021 - anoNascimento);
 	}

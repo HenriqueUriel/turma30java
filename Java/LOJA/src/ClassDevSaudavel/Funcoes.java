@@ -1,10 +1,11 @@
 package ClassDevSaudavel;
 
+import java.util.List;
 import java.util.Scanner;
 
 public class Funcoes {
 //entra Site
-	public static void entraNosite() {
+	public static boolean entraNosite() {
 		Scanner ler = new Scanner(System.in);
 		char entraSite;
 		
@@ -15,8 +16,10 @@ public class Funcoes {
 		
 		if (entraSite == 'S') {
 			insereBanner ();
+			return true;
 		} else {
 			System.out.print("\"Obrigado pela visita!!\n");
+			return false;
 		}	
 		
 	}
@@ -30,8 +33,14 @@ public class Funcoes {
 		System.out.print("---------------------------------------------------------\n");
 	}
 
+	public static void apresentaTabela(List<Produto> lista) {
+		if(entraNosite()) {
+			for (Produto item : lista) {
+				System.out.print(item.getCodProduto()+"\t"+item.getProduto()+"\t\t"+item.getPreco()+"\t\t"+item.getEstoque()+"\n");
+			}
+		}
+	}
 
 
 }
-
 
