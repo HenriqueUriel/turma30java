@@ -35,7 +35,7 @@ public class Funcoes {
 		System.out.print("---------------------------------------------------------\n");
 	}
 
-	public static void apresentaTabela(List<Produto> lista) {
+	public static void apresentaTabela(List<Produto> lista, List<Produto> carrinho) {
 		String auxCod;
 		int auxQuant = 0;
 		int pos=-1;
@@ -47,7 +47,12 @@ public class Funcoes {
 				for (Produto item : lista) {
 					System.out.println(item.getCodProduto()+"\t"+item.getPreco()+"\t\t"+item.getEstoque()+"\t\t"+item.getProduto()+((item.getEstoque()>0)?" ":"\tPRODUTO INDISPONIVEL"));
 				}
-				System.out.print("Digite o codigo do produto: ");
+				System.out.println("CARRINHO DE COMPRAS");
+				System.out.println("COD\tVALOR\tESTOQUE\tPRODUTO");
+				for (Produto escolhido : carrinho) {
+					System.out.println(escolhido.getCodProduto()+"\t"+escolhido.getPreco()+"\t"+escolhido.getEstoque()+"\t"+escolhido.getProduto());
+				}
+					System.out.print("Digite o codigo do produto: ");
 				auxCod = ler.next().toUpperCase();
 				//pos = lista.indexOf(auxCod);
 				
@@ -78,8 +83,7 @@ public class Funcoes {
 					else if (lista.get(pos).getEstoque()< auxQtde) {
 						System.out.print("Impossivel realizar, quantidade maior que estoque!!");
 					} else {
-						System.out.println("Valor: R$"+(auxQtde*lista.get(pos).getPreco()));
-						lista.get(pos).retiraEstoque(auxQtde);
+						carrinho.add(new Produto(lista.get(pos).getCodProduto(),lista.get(pos).getProduto(),lista.get(pos).getPreco(),auxQtde));
 					}
 				}
 				else {
@@ -87,12 +91,34 @@ public class Funcoes {
 				}
 				System.out.println("Continua SIM/NAO [S/N] :");
 				op = ler.next().toUpperCase().charAt(0);
-				insereBanner ();
+
 			} while (op=='S');
-			for (Produto item : lista) {
+			System.out.println("FECHAMENTO DA COMPRA");
+			System.out.println("COD\tVALOR\tESTOQUE\tPRODUTO");
+			double auxTotal=0;
+			for (Produto escolhido : carrinho) {
+					for (int x=0; x<lista.size(); x++ ) {
+						
+						if (lista.get(x).getCodProduto().equals(escolhido.getCodProduto())) {
+							pos = x;
+							break;
+						}
+						
+					}
+				System.out.println(escolhido.getCodProduto()+"\t"+escolhido.getPreco()+"\t"+escolhido.getEstoque()+"\t"+escolhido.getProduto());
+				auxTotal = auxTotal + (escolhido.getPreco()*escolhido.getEstoque());
+				lista.get(pos).retiraEstoque(escolhido.getEstoque());				
+			}
+			System.out.println("TOTAL R$: "+auxTotal+"\n\r");	
+			carrinho.clear();
+			
+			
+			System.out.print("TABELA ATUALIZA:\n\r");
+			insereBanner();
+			for (Produto item : lista) {		
 				System.out.println(item.getCodProduto()+"\t"+item.getPreco()+"\t\t"+item.getEstoque()+"\t\t"+item.getProduto());
 			}
-			System.out.println("VOLTE SEMPRE!!!");
+			System.out.println("ATÉ BREVE!!!");
 		}
 	}
 

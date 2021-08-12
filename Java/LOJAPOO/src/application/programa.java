@@ -27,7 +27,7 @@ public class programa extends Funcoes {
 		lista.add(new Produto("G3-09","BCAA CAPS",50.00,10));
 		lista.add(new Produto("G3-10","Corda P.",22.00,10));
 		
-		apresentaTabela(lista);	
+		apresentaTabela(lista, carrinho);	
 	}
 
 }
