@@ -19,6 +19,7 @@ public class Funcoes {
 			return true;
 		} else {
 			System.out.print("\"Obrigado pela visita!!\n");
+			System.exit(0);
 			return false;
 		}	
 		
