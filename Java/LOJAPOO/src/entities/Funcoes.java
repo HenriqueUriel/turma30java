@@ -22,7 +22,6 @@ public class Funcoes {
 		entraSite = ler.next().toUpperCase().charAt(0);
 		
 		if (entraSite == 'S') {
-			insereBanner ();
 			return true;
 		} else {
 			System.out.print("Obrigado pela visita!!\n");
@@ -41,6 +40,7 @@ public class Funcoes {
 	}
 
 	public static void apresentaTabela(List<Produto> lista, List<Produto> carrinho) {
+		Scanner ler = new Scanner(System.in);
 		DecimalFormat df = new DecimalFormat("#.00");//arredondamento do valor								
 		LocalDateTime agora = LocalDateTime.now();//data/hora atual
 		DateTimeFormatter formatterData = DateTimeFormatter.ofPattern("dd/MM/uuuu");// formatar a data
@@ -50,12 +50,14 @@ public class Funcoes {
 		String auxCod;
 		int auxQuant = 0;
 		int pos=-1;
-		char op;
+		char op='s';
 		int opcaoCompra =0;
-		Scanner ler = new Scanner(System.in);
+		double auxTotal=0;
+		//inicio codigo
 		if(entraNosite()) {
 			do {
 				//tabela dos produtos
+				insereBanner ();
 				pos = -1;
 				for (Produto item : lista) {
 					System.out.println(item.getCodProduto()+"\t"+item.getPreco()+"\t\t"+item.getEstoque()+"\t\t"+item.getProduto()+((item.getEstoque()>0)?" ":"\tPRODUTO INDISPONIVEL"));
@@ -94,21 +96,22 @@ public class Funcoes {
 						System.out.println("Impossivel realizar, produto sem estoque!!!");
 					}
 					else if (lista.get(pos).getEstoque()< auxQtde) {
-						System.out.print("Impossivel realizar, quantidade maior que estoque!!");
+						System.out.print("Impossivel realizar, quantidade maior que estoque!!");					
 					} else {
 						carrinho.add(new Produto(lista.get(pos).getCodProduto(),lista.get(pos).getProduto(),lista.get(pos).getPreco(),auxQtde));
 					}
 				}
-				else {
+					else {
 					System.out.println("Codigo informado não existe!!!");
-				}//continua com a compra
+					}
+				//continua com a compra
 				System.out.print("\n\nContinua SIM/NAO [S/N] :");
 				op = ler.next().toUpperCase().charAt(0);
-
-			} while (op=='S');//fechamento compra
+			} while (op=='S');
+			//fechamento compra
 			System.out.println("\n\nFechamento da Compra:");
 			System.out.println("COD\tVALOR  ESTOQUE\t PRODUTO");
-			double auxTotal=0;
+			
 			for (Produto escolhido : carrinho) {
 					for (int x=0; x<lista.size(); x++ ) {
 						
@@ -179,7 +182,7 @@ public class Funcoes {
 				System.out.println(item.getCodProduto()+"\t"+item.getPreco()+"\t\t"+item.getEstoque()+"\t\t"+item.getProduto());
 			}
 			System.out.println("---------------------------------------------------------");
-			System.out.println("\nOBRIGADO PELA VISITA, ESPERAMOS TE VER DE NOVAMENTE!!\n");
+			System.out.println("\nOBRIGADO PELA VISITA, ESPERAMOS TE VER NOVAMENTE!!\n");
 		}
 	}
 
