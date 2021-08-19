@@ -112,7 +112,7 @@ public class Funcoes {
 			System.out.println("\n\nFechamento da Compra:");
 			System.out.println("COD\tVALOR  ESTOQUE\t PRODUTO");
 			
-			for (Produto escolhido : carrinho) {
+			for (Produto escolhido : carrinho) {	
 					for (int x=0; x<lista.size(); x++ ) {
 						
 						if (lista.get(x).getCodProduto().equals(escolhido.getCodProduto())) {
