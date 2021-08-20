@@ -41,5 +41,6 @@ select * from tb_classe
 inner join tb_personagens on tb_personagens.id_pers = tb_classe.id;
 
 select tb_classe.tipo, tb_personagens.nome from tb_classe
-inner join tb_personagens on tb_personagens.id_pers = tb_classe.id;
+inner join tb_personagens on tb_personagens.id_pers = tb_classe.id
+where tb_classe.tipo like "%CAÇADOR%";
 
