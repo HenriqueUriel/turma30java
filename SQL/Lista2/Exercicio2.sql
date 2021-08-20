@@ -42,10 +42,10 @@ select * from tb_pizza where preco between 29 and 60;
 
 select * from tb_pizza where borda like "%c%";
 
-select * from tb_categoria
-inner join tb_pizza on tb_pizza.id_pizza = tb_categoria.id_cat; 
+select * from tb_pizza
+inner join tb_categoria on tb_pizza.id_cat = tb_categoria.id_cat;
 
 -- pizza doce
-select tb_categoria.nome, tb_categoria.tipo, tb_categoria.tamanho, tb_pizza.sabor, tb_pizza.preco from tb_categoria
-inner join tb_pizza on tb_pizza.id_pizza = tb_categoria.id_cat
+select tb_categoria.nome, tb_categoria.tipo, tb_categoria.tamanho, tb_pizza.sabor, tb_pizza.preco from tb_pizza
+inner join tb_categoria on tb_pizza.id_cat = tb_categoria.id_cat
 where tb_categoria.tipo like "%doce%";

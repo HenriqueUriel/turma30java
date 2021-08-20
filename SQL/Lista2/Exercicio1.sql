@@ -37,10 +37,10 @@ select * from tb_classe where ataque > 2000;
 select * from tb_classe where defesa BETWEEN 1000 AND 2000;
 select * from tb_personagens where nome like "%c%";
 
-select * from tb_classe
-inner join tb_personagens on tb_personagens.id_pers = tb_classe.id;
+select * from tb_personagens
+inner join tb_classe on tb_personagens.id = tb_classe.id;
 
-select tb_classe.tipo, tb_personagens.nome from tb_classe
-inner join tb_personagens on tb_personagens.id_pers = tb_classe.id
+select tb_classe.tipo, tb_personagens.nome from tb_personagens
+inner join tb_classe on tb_personagens.id = tb_classe.id
 where tb_classe.tipo like "%CAÇADOR%";
 
