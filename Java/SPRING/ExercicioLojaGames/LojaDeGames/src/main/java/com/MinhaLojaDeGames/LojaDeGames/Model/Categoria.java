@@ -23,6 +23,7 @@ public class Categoria {
 	private long id;
 	
 	@NotBlank
+	@Size(max = 200)
 	private String descricao;
 
 
