@@ -1,4 +1,4 @@
-package com.MinhaLojaDeGames.LojaDeGames.Model;
+package com.MinhaLojaDeGames.LojaDeGames.model;
 
 import java.math.BigDecimal;
 
@@ -14,7 +14,7 @@ import javax.validation.constraints.Size;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 @Entity
-@Table(name = "produto")
+@Table(name = "tb_produto")
 public class Produto {
 
 	@Id
