@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
+    <link rel="stylesheet" href="assets/css/estilo.css">
 </head>
 <body>
-    <ul>
+
+     <ul id="menu">
         <li>
             <a href="index.html"> Home </a>
         </li>
@@ -15,29 +17,40 @@
         </li>
     </ul>
 
-    <form>
-        <label for="nome"> Nome:</label><br>
-        <input type="text" id="nome"><br><br>
-
-        <label for="email"> Email:</label><br>
-        <input type="email" id="email"><br><br>
-
-        <label for="assunto"> Assunto:</label><br>
-        <textarea name="assunto" id="assunto" cols="30" rows="8"></textarea><br><br>
     
-        <button>Enviar</button>
-    </form>
+    <div class="mg-60">
+        <form>
+            <label for="nome"> Nome:</label><br>
+            <input type="text" id="nome"><br><br>
+    
+            <label for="email"> Email:</label><br>
+            <input type="email" id="email"><br><br>
+    
+            <label for="assunto"> Assunto:</label><br>
+            <textarea name="assunto" id="assunto" cols="30" rows="8"></textarea><br><br>
+        
+            <button>Enviar</button>
+        </form>
+    </div>  
+    
 
-    <h2>Localização</h2>
-    <p>Rua Zelia Tanaka Vidal, 262</p>
-    <p>São Paulo - SP</p>
+    <footer>
+        
+        <div class="container mg-topo">
+            <a href="https://www.instagram.com/_rikiuriel/" target="_blank">
+                <img class="tm-social" src="assets/img/instagram.png" alt="Logo instagram">
+            </a>
+            <a href="https://www.linkedin.com/in/henrique-uriel/" target="_blank">
+                <img class="tm-social" src="assets/img/linkedin.png" alt="Logo linkedin">
+            </a>
+            <a href= "https://goo.gl/maps/DnSTzDoCgzjXYvBb7" target="_blank">
+                <img class="tm-social" src="assets/img/google-maps.png" alt="Logo google-maps">
+            </a>
+        </div>
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.367526965028!2d-46.771386185021726!3d-23.591148584668186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce55b435ee2ee1%3A0xe7910d105bbfa931!2sRua%20Zelia%20Tanaka%20Vidal%20-%20Jardim%20Rosa%20Maria%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005547-120!5e0!3m2!1spt-BR!2sbr!4v1631805752772!5m2!1spt-BR!2sbr" 
-    width="400" 
-    height="400" 
-    style="border:0;" 
-    allowfullscreen="" 
-    loading="lazy"></iframe>
-
+        <p class="center">
+            Todos os direitos reservados: Henrique Uriel &copy;
+        </p>
+    </footer>
 </body>
 </html>
