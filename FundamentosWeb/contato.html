@@ -16,33 +16,30 @@
             <a href="contato.html"> Contato </a>
         </li>
     </ul>
+  
+        <form class="center mgcenter">
+            <fieldset class="borda20px">
+                <legend class="borda20px">Entre em Contato Comigo</legend>
+                <label for="nome">Nome</label><br>
+                <input class="borda20px" type="text" id="nome" onkeyup='validaNome()'>
+                <div id='txtNome'></div>
+                <br>
 
-    <h1 class="center">Entre em Contato Comigo</h1>
-    
-    <div class="mg-26 center">
-        <form>
-            <label for="nome">Nome</label><br>
-            <input class="borda20px" type="text" id="nome" onkeyup='validaNome()'>
-            <div id='txtNome'></div>
-            <br>
+                <label for="email">Email</label><br>
+                <input class="borda20px" type="email" id="email" onkeyup="validaEmail()">
+                <div id='txtEmail'></div>
+                <br>
 
-            <label for="email">Email</label><br>
-            <input class="borda20px" type="email" id="email" onkeyup="validaEmail()">
-            <div id='txtEmail'></div>
-            <br>
+                <label for="assunto">Assunto</label><br>
+                <textarea class="borda20px" name="assunto" id="assunto" cols="30" rows="8" onkeyup="validaAssunto()"></textarea>
+                <div id='txtAssunto'></div>
+                <br>
 
-            <label for="assunto">Assunto</label><br>
-            <textarea class="borda20px" name="assunto" id="assunto" cols="30" rows="8" onkeyup="validaAssunto()"></textarea>
-            <div id='txtAssunto'></div>
-            <br>
-
-            <button class="borda20px botao" onclick="enviar()">Enviar</button>
+                <button class="borda20px botao" onclick="enviar()">Enviar</button>
+            </fieldset>
         </form>
-    </div>  
-    
 
-    <footer>
-        
+    <footer>    
         <div class="container">
             <a href="https://www.instagram.com/_rikiuriel/" target="_blank">
                 <img class="tm-social" src="assets/img/instagram.png" alt="Logo instagram">
