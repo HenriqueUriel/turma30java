@@ -4,7 +4,7 @@ body {
 }
 
 .center {
- text-align: center;
+    text-align: center;
 }
 
 .container {
@@ -17,8 +17,7 @@ body {
 
 .br-50 {
     border-radius: 50%;
-    width: 250px;
-    margin-left: 20px;   
+    width: 250px;  
 }
 
 .txmargem {
@@ -46,10 +45,20 @@ body {
     padding: 30px;
 }
 
-.mg-60 {
-    margin: 60px;
+.mg-26 {
+    margin: 26px;
 }
 
-.mg-topo {
-    margin-top: 120px;
+.bordatxt {
+    border-radius: 90px 150px;
+    background-color: white;
+    margin-left: 10px;
+}
+
+.borda20px {
+    border-radius: 20px;
+}
+
+.botao:hover {
+    background-color:rgba(211, 195, 195, 0.781);
 }

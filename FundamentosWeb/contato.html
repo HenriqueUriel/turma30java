@@ -17,26 +17,33 @@
         </li>
     </ul>
 
+    <h1 class="center">Entre em Contato Comigo</h1>
     
-    <div class="mg-60">
+    <div class="mg-26 center">
         <form>
-            <label for="nome"> Nome:</label><br>
-            <input type="text" id="nome"><br><br>
-    
-            <label for="email"> Email:</label><br>
-            <input type="email" id="email"><br><br>
-    
-            <label for="assunto"> Assunto:</label><br>
-            <textarea name="assunto" id="assunto" cols="30" rows="8"></textarea><br><br>
-        
-            <button>Enviar</button>
+            <label for="nome">Nome</label><br>
+            <input class="borda20px" type="text" id="nome" onkeyup='validaNome()'>
+            <div id='txtNome'></div>
+            <br>
+
+            <label for="email">Email</label><br>
+            <input class="borda20px" type="email" id="email" onkeyup="validaEmail()">
+            <div id='txtEmail'></div>
+            <br>
+
+            <label for="assunto">Assunto</label><br>
+            <textarea class="borda20px" name="assunto" id="assunto" cols="30" rows="8" onkeyup="validaAssunto()"></textarea>
+            <div id='txtAssunto'></div>
+            <br>
+
+            <button class="borda20px botao" onclick="enviar()">Enviar</button>
         </form>
     </div>  
     
 
     <footer>
         
-        <div class="container mg-topo">
+        <div class="container">
             <a href="https://www.instagram.com/_rikiuriel/" target="_blank">
                 <img class="tm-social" src="assets/img/instagram.png" alt="Logo instagram">
             </a>
@@ -52,5 +59,8 @@
             Todos os direitos reservados: Henrique Uriel &copy;
         </p>
     </footer>
+
+    <script src="assets/js/script.js"></script>
+
 </body>
 </html>
