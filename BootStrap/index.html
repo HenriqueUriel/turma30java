@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+    crossorigin="anonymous">
+    <!--estilo-->
+    <style>
+        .tm-social{
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+    <!--/estilo-->
+    <title>Atividade Bootstrap</title>
+  </head>
+  <body>
+    
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand text-primary" href="#">CUIDE-SE</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" 
+        data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" 
+        aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-success" href="#">Inicio<span class="sr-only">(página atual)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-success" href="#card">Principais Pontos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-success" href="#txtvideo">Explicação e Video</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-success" href="#forms">Entre em Contato</a>
+            </li>
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-success" href="#" id="navbarDropdown" role="button" 
+              data-toggle="dropdown" aria-haspopup="true" 
+              aria-expanded="false">Redes Sociais e Localização</a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item text-success" href="https://www.linkedin.com/in/henrique-uriel/" 
+                target="_blank">LinkedIn</a>
+                <a class="dropdown-item text-success" href="https://www.instagram.com/_rikiuriel/" 
+                target="_blank">Instagram</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item text-success" href="https://goo.gl/maps/DnSTzDoCgzjXYvBb7" 
+                target="_blank">Localização</a>
+              </div>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2 text-success" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+            <button class="btn btn-outline-success my-2 my-sm-0" 
+            type="submit">Pesquisar</button>
+          </form>
+        </div>
+      </nav>
+      <!--/navbar-->
+
+      <!--carousel-->
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="assets/img/alimentos1.jpg" 
+            alt="Primeiro Slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="assets/img/alimentos2.jpg"  
+            alt="Segundo Slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="assets/img/alimentos3.jpg"  
+            alt="Terceiro Slide">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="assets/img/alimentos4.jpg"  
+            alt="Quarto Slide">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Próximo</span>
+        </a>
+      </div>
+      <!--carousel-->
+      
+      <!--jumbotron-->
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4 text-success">Alimentação e Hidratação</h1>
+          <p class="lead text-primary">Uma combinação perfeita para um excelente dia, seja no calor ou no frio, mantenha sua qualidade de vida!!</p>
+        </div>
+      </div>
+      <!--/jumbotron-->
+
+    <!--cards-->
+    <div class="container">
+       <div class="card-group" id="card">
+        <div class="card">
+          <img class="card-img-top" src="https://www.correio24horas.com.br/fileadmin/_processed_/c/3/csm_24102018_baz_sommelier_de_aguas_cred_divulgacao_shutterstock_1_aff62af31d.jpg" 
+          alt="Garrafa de aguá enchendo o copo">
+          <div class="card-body bg-light">
+            <h5 class="card-title text-success">Aguá</h5>
+            <p class="card-text">Nosso corpo é composto por 70% de aguá e manter uma boa Hidratação
+                te ajuda a previnir doenças e a manter seus órgãos em melhor funcionamento.
+            </p>
+            <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="https://tvazteca.brightspotcdn.com/dims4/default/49e784f/2147483647/strip/true/crop/999x616+0+23/resize/1200x740!/format/jpg/quality/90/?url=https%3A%2F%2Ftvazteca.brightspotcdn.com%2Fca%2F92%2F0db6eb30ff8e11c3578746de49b5%2Fimagendepositphotos-2255663.jpg" 
+          alt="alimentos saudaveis">
+          <div class="card-body bg-light">
+            <h5 class="card-title text-success">Alimentos</h5>
+            <p class="card-text">Manter uma excelente alimentação te ajudará a ter mais disposição
+                no seu dia-a-dia e você será muito mais produtivo em suas atividades e no seu emprego,
+                alem de ter uma saúde estável.
+            </p>
+            <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="assets/img/sono.jpg">
+          <div class="card-body bg-light">
+            <h5 class="card-title text-success">Descanso</h5>
+            <p class="card-text">O descanso é algo muito importante para o seu dia e principalmente
+                para seu dia seguinte. Alem de você repor suas energias, descansa sua mente e tende a acordar 
+                mais disposto para o dia seguinte.
+            </p>
+            <p class="card-text"><small class="text-muted">Atualizados 3 minutos atrás</small></p>
+          </div>
+        </div>
+      </div>
+    
+    <!--/cards-->
+
+    <!--texto e video-->
+    <div class="row mt-5 mb-5" id="txtvideo">
+        <div class="col-md-6">
+            <h3 class="text-success">Porque ser saúdavel?</h3>
+            <p> Se alimentar de forma saudável e equilibrada é essencial para garantir qualidade de vida. Isso porque, 
+                além de fornecer energia e bem-estar geral, 
+                através de uma boa alimentação é possível prevenir e combater doenças, 
+                manter o peso corporal saudável e ter um bom desenvolvimento físico.
+            </p>
+            <p> Devemos ter uma alimentação saudável e equilibrada porque nossos órgãos e tecidos precisam de uma nutrição 
+                adequada para trabalhar de forma eficaz. 
+                Sem uma boa nutrição, seu corpo fica mais propenso a doenças, infecções, fadiga e baixo desempenho. Comer uma dieta saudável e
+                equilibrada não é tão complicado. Basta escolher uma variedade de alimentos de todos os principais grupos alimentares, 
+                incluindo frutas e legumes, carnes ou fontes de proteína, leite ou cálcio, grãos e cereais e óleos e gorduras saudáveis.
+            </p>
+        </div>
+            <div class="col-md6">
+                <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/lbLVhHF9RZQ" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>
+            </div>       
+    </div>
+    <!--/texto e video-->
+    
+    <!--formulario-->
+    <div class="row bg-light" id="forms">
+        <div class="col-md-12">
+            <h4 class="text-success">Entre em Contato</h4>
+              <div class="form-group">
+                <label class="sr-only text-success" for="Nome">Nome</label>
+                <input type="text" class="form-control text-success" id="Nome" placeholder="Nome Sobrenome" onkeyup='validaNome()'>
+              <div id='txtNome'></div>
+              </div>
+              <div class="form-group">
+                <label for="email" class="text-success">Endereço de email</label>
+                <input type="email" class="form-control text-success" id="email" placeholder="nome@exemplo.com" onkeyup="validaEmail()">
+              <div id='txtEmail'></div>
+              </div>
+              <div class="form-group">
+                <label for="mensagem" class="text-success">Mensagem</label>
+                <textarea class="form-control text-success" id="mensagem" rows="3" placeholder="Máximo de 200 caracteres" 
+                onkeyup="validaMensagem()"></textarea>
+              <div id='txtMensagem'></div>
+              <div class="form-group mt-3"> 
+                <button type="button" class="btn btn-outline-success" onclick="enviar()">Enviar</button>
+              </div>  
+              </div>
+            </form>
+        </div>
+    </div>
+    <form>       
+    <!--/formulario-->
+    
+    <!--rodapé-->
+    <hr>
+    <footer>
+        <div class="row mb-3">
+            <div class="col-md-12 d-flex justify-content-center">
+                <div>
+                    <a href="https://www.instagram.com/_rikiuriel/" target="_blank" class="p-3">
+                        <img class="tm-social" src="assets/img/instagram.png" alt="Logo instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/in/henrique-uriel/" target="_blank" class="p-3">
+                        <img class="tm-social" src="assets/img/linkedin.png" alt="Logo linkedin">
+                    </a>
+                    <a href= "https://goo.gl/maps/DnSTzDoCgzjXYvBb7" target="_blank" class="p-3">
+                        <img class="tm-social" src="assets/img/google-maps.png" alt="Logo google-maps">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-center">
+                    Todos os direitos reservados: Henrique Uriel &copy;
+                </p>
+            </div>
+        </div>      
+    </footer>
+    <!--/rodapé-->
+    </div>
+    
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="assets/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" 
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" 
+    crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" 
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  </body>
+</html>
