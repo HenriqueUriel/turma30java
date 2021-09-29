@@ -1,4 +1,4 @@
-package org.generation.blogPessoal.configuration;
+package configuration;
 
 import java.util.ArrayList;
 import java.util.List;
