@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { environment } from 'src/environments/environment.prod';
 import { Postagem } from '../model/Postagem';
+import { Tema } from '../model/Tema';
 
 @Injectable({
   providedIn: 'root'
@@ -21,6 +22,14 @@ export class PostagemService {
 
   getByIdPostagem(id: number): Observable<Postagem>{
     return this.http.get<Postagem>(`https://blogdouriel.herokuapp.com/postagens/${id}`, this.token)
+  }
+
+  getByTituloPostagem(titulo: string): Observable<Postagem[]>{
+    return this.http.get<Postagem[]>(`https://blogdouriel.herokuapp.com/postagens/titulo/${titulo}`, this.token)
+  }
+
+  getByNomeTema(nome : string): Observable<Tema[]>{
+    return this.http.get<Tema[]>(`https://blogdouriel.herokuapp.com/tema/nome/${nome}`, this.token)
   }
 
   postPostagem(postagem: Postagem): Observable<Postagem>{
